@@ -63,8 +63,7 @@ class ContributorsUI : JFrame("GitHub Contributors"), Contributors {
     override fun updateContributors(users: List<User>) {
         if (users.isNotEmpty()) {
             log.info("Updating result with ${users.size} rows")
-        }
-        else {
+        } else {
             log.info("Clearing result")
         }
         resultsModel.setDataVector(users.map {

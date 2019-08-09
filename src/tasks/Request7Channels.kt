@@ -1,9 +1,9 @@
 package tasks
 
-import contributors.*
-import kotlinx.coroutines.channels.Channel
+import contributors.GitHubService
+import contributors.RequestData
+import contributors.User
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
 
 suspend fun loadContributorsChannels(
     service: GitHubService,
