@@ -4,9 +4,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-fun main() =
-
-    runBlocking<Unit> {
+fun main() = runBlocking<Unit> {
     val channel = Channel<String>()
     launch {
         channel.send("A1")
